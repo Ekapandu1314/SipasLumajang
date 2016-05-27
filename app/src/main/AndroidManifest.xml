@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.mirzaadr.sipaslumajang" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Pilih_Tanggal"
+            android:label="@string/pilih_tanggal"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AnggotaTab"
+            android:label="Anggota"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName=".MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+        <!-- One Activity -->
+        <activity android:name=".AnggotaLihatKamar" />
+        <!-- Two Activity -->
+        <activity android:name=".AnggotaLihatRegu" />
+        <activity
+            android:name=".KepalaLapasTab"
+            android:label="Kepala Lapas"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- One Activity -->
+        <activity android:name=".CekKamarKepalaLapas" />
+        <!-- Two Activity -->
+        <activity android:name=".CekPenjagaKepalaLapas" />
+        <!-- Three Activity -->
+        <activity android:name=".SummaryKepalaLapas" />
+        <activity
+            android:name=".KepalaReguTab"
+            android:label="Kepala Regu"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- One Activity -->
+        <activity android:name=".KepalaReguAbsenKamar" />
+        <!-- Two Activity -->
+        <activity android:name=".KepalaReguAbsenRegu" />
+        <activity
+            android:name=".WanitaTab"
+            android:label="Regu Wanita"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- One Activity -->
+        <activity android:name=".WanitaAbsen" />
+        <!-- Two Activity -->
+        <activity android:name=".WanitaKamar" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+
+</manifest>

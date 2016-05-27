@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorSplashBackground"
+    android:padding="@dimen/frame"
+    android:fillViewport="true"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSplashBackground"
+            android:orientation="vertical">
+
+            <!--Tanggal-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/colorYellow"
+                android:id="@+id/tgl_ketuabs"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="@dimen/frame"
+                android:layout_marginTop="@dimen/frame"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorYellow"/>
+
+            <!--Regu 1-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/regu1"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/colorYellow"
+                android:id="@+id/textregu1" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/nama"
+                    android:id="@+id/textView7"
+                    android:textColor="@color/colorYellow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/textView8"
+                    android:layout_toStartOf="@+id/textView8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/shift"
+                    android:id="@+id/textView8"
+                    android:textColor="@color/colorYellow"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/textView9"
+                    android:layout_toLeftOf="@+id/textView9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/status"
+                    android:id="@+id/textView9"
+                    android:textColor="@color/colorYellow"
+                    android:layout_gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorYellow"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:id="@+id/list_regu1"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="10dp"
+                android:text="Revisi Regu 1"
+                android:layout_gravity="center"
+                android:id="@+id/unlock_regu1"
+                android:onClick="unlockData_regu1" />
+
+            <!--Regu 2-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="10dp"
+                android:text="@string/regu2"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/colorYellow"
+                android:id="@+id/textregu2" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/nama"
+                    android:id="@+id/textView10"
+                    android:textColor="@color/colorYellow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/textView11"
+                    android:layout_toStartOf="@+id/textView11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/shift"
+                    android:id="@+id/textView11"
+                    android:textColor="@color/colorYellow"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/textView12"
+                    android:layout_toLeftOf="@+id/textView12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/status"
+                    android:id="@+id/textView12"
+                    android:textColor="@color/colorYellow"
+                    android:layout_gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorYellow"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:id="@+id/list_regu2"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical"/>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Revisi Regu 2"
+                android:layout_marginTop="10dp"
+                android:id="@+id/unlock_regu2"
+                android:layout_gravity="center"
+                android:onClick="unlockData_regu2" />
+
+            <!--Regu3-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="10dp"
+                android:text="@string/regu3"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/colorYellow"
+                android:id="@+id/textregu3" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/nama"
+                    android:id="@+id/textView13"
+                    android:textColor="@color/colorYellow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/textView14"
+                    android:layout_toStartOf="@+id/textView14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/shift"
+                    android:id="@+id/textView14"
+                    android:textColor="@color/colorYellow"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/textView15"
+                    android:layout_toLeftOf="@+id/textView15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/status"
+                    android:id="@+id/textView15"
+                    android:textColor="@color/colorYellow"
+                    android:layout_gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorYellow"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:id="@+id/list_regu3"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical"/>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="10dp"
+                android:text="Revisi Regu 3"
+                android:id="@+id/unlock_regu3"
+                android:layout_gravity="center"
+                android:onClick="unlockData_regu3" />
+            <!--Regu 4-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="10dp"
+                android:text="@string/regu4"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/colorYellow"
+                android:id="@+id/textregu4" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/nama"
+                    android:id="@+id/textView16"
+                    android:textColor="@color/colorYellow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/textView17"
+                    android:layout_toStartOf="@+id/textView17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/shift"
+                    android:id="@+id/textView17"
+                    android:textColor="@color/colorYellow"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/textView2"
+                    android:layout_toLeftOf="@+id/textView2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/status"
+                    android:id="@+id/textView2"
+                    android:textColor="@color/colorYellow"
+                    android:layout_gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorYellow"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:id="@+id/list_regu4"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical"/>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Revisi Regu 4"
+                android:layout_marginTop="10dp"
+                android:id="@+id/unlock_regu4"
+                android:layout_gravity="center"
+                android:onClick="unlockData_regu4" />
+
+            <!--Wanita-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="10dp"
+                android:text="@string/wanita"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:padding="@dimen/activity_vertical_margin"
+                android:textColor="@color/colorYellow"
+                android:id="@+id/textwanita" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/nama"
+                    android:id="@+id/textView18"
+                    android:textColor="@color/colorYellow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/textView19"
+                    android:layout_toStartOf="@+id/textView19" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/shift"
+                    android:id="@+id/textView19"
+                    android:textColor="@color/colorYellow"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/textView20"
+                    android:layout_toLeftOf="@+id/textView20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/status"
+                    android:id="@+id/textView20"
+                    android:textColor="@color/colorYellow"
+                    android:layout_gravity="end"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorYellow"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:id="@+id/list_reguWanita"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical"/>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="Revisi Regu Wanita"
+                android:id="@+id/unlock_reguWanita"
+                android:layout_gravity="center"
+                android:onClick="unlockData_reguw" />
+
+            <!--verifikasi-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorYellow"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/ver_ketua_pjg"
+                android:textColor="@color/colorYellow"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="@string/copyright"
+                android:gravity="center"
+                android:background="@color/colorYellow"
+                android:textColor="@color/colorBackground"
+                android:textSize="12sp"
+                android:layout_margin="@dimen/frame"
+                />
+        </LinearLayout>
+
+    </ScrollView>

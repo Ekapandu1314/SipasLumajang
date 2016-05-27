@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/list_item_selector" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1"
+        android:id="@+id/lock1"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/regu1"
+        android:layout_toStartOf="@+id/regu1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/nama"
+        android:id="@+id/nama1"
+        android:textColor="@color/colorYellow"
+        android:textColorHint="@color/colorYellow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_alignTop="@+id/lock1"
+        android:layout_toStartOf="@+id/regu1"
+        android:layout_toLeftOf="@+id/regu1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/shift"
+        android:id="@+id/regu1"
+        android:textColor="@color/colorYellow"
+        android:textColorHint="@color/colorYellow"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/keterangan1"
+        android:layout_toStartOf="@+id/keterangan1"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/kosong"
+        android:id="@+id/keterangan1"
+        android:textColor="@color/colorYellow"
+        android:textColorHint="@color/colorYellow"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="7dp" />
+
+
+</RelativeLayout>
